@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        .panel-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        
+        .panel-left {
+            flex: none;
+            /* manual resize */
+            width: 300px;
+        }
+        
+        .splitter {
+            flex: none;
+            /* manual resize */
+            width: 18px;
+        }
+        
+        .panel-right {
+            flex: 1;
+            /* resizable */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel-container">
+        <nav class="panel-left">
+            left
+        </nav>
+        <div class="splitter">
+            splitter
+        </div>
+        <article class="panel-right">
+            right
+        </article>
+    </div>
+
+</body>
+
+</html>
